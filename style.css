@@ -171,3 +171,24 @@ input[type="number"] {
   color: #888888;
   white-space: nowrap;
 }
+
+button[type="submit"] {
+  background-color: #64c91e;
+  color: white;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.category-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+}
