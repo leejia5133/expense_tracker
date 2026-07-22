@@ -110,8 +110,13 @@ input[type="number"] {
   border: none;
   border-radius: 10px;
   padding: 10px 12px;
-  background-color: #eeeeee;
   cursor: pointer;
+
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 .food {
   background-color: #f28ca8;
@@ -183,19 +188,6 @@ button[type="submit"] {
   background-color: #64c91e;
   color: white;
   border: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.category-button {
-  border: none;
-  border-radius: 10px;
-  padding: 10px 12px;
-  cursor: pointer;
-
-  color: #333333;
-  font-family: inherit;
-  font-size: 14px;
   appearance: none;
   -webkit-appearance: none;
 }
