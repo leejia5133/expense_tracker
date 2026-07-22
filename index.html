@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 가계부</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>지출 기록</h1>
+
+    <form id="expense-form">
+
+      <label for="amount">금액</label>
+<div class="amount-input">
+      <input type="number" id="amount" placeholder="금액을 입력하세요">
+<span>원</span>
+</div>
+
+<div class="space"></div>
+
+      <label for="category">카테고리</label>
+<div class="category-buttons">
+  <button type="button" class="category-button food" data-category="식비">식비</button>
+  <button type="button" class="category-button car" data-category="교통비">교통비</button>
+  <button type="button" class="category-button med" data-category="의료/건강">의료/건강</button>
+  <button type="button" class="category-button int" data-category="인터넷쇼핑">인터넷쇼핑</button>
+  <button type="button" class="category-button edu" data-category="교육">교육</button>
+  <button type="button" class="category-button live" data-category="생필품">생필품</button>
+  <button type="button" class="category-button cul" data-category="문화생활">문화생활</button>
+  <button type="button" class="category-button etc" data-category="기타">기타</button>
+  <button type="button" class="category-button cafe" data-category="카페">카페</button>
+</div>
+
+<input type="hidden" id="category">
+
+<div class="space"></div>
+
+      <label for="memo">메모</label>
+      <input type="text" id="memo" placeholder="무엇에 사용했나요?">
+
+      <button type="submit">저장</button>
+
+
+    </form>
+
+<div class="space"></div>
+
+<h2>카테고리별 기록</h2>
+
+<div id="category-summary">
+  <canvas id="category-chart"></canvas>
+</div>
+
+<div class="space"></div>
+
+<h2>세부기록</h2>
+<div id="expense-list"></div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
